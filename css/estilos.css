@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    font-family: monospace;
+}
+nav{
+    width: 100%;
+    position: fixed;
+}
+nav ul li{
+    display: inline-block;
+    margin: 2em;
+}
+nav a{
+    color: brown;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 1em;
+}
+.titulos{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.fondo{
+    padding-top: 10%;
+    width: 100%;
+}
+h3{
+    font-size: 4ch;
+}
+h2{
+    font-size: 3em;
+}
+h4{
+    font-size: 2em;
+}
+#contactos{
+    background: rgb(12, 235, 216);
+    padding-top: 10%;
+}
+#contactos .col{
+    
+    width: 50%;
+    display: inline-block;
+}
+#contacto .col .mapa{
+    background-color: hotpink;
+    width: 40%;
+}
+#historia{
+    background-color: rgb(158, 240, 240);
+}
+#contacto .h3{
+    width: 1em;
+}
+.row{
+    margin-bottom: 1em;
+    display: inline-block;
+} 
+.col {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.tienda{
+    width: 50%;
+    display: inline-block;
+}
+.descripcion{
+    width: 30%;
+    display: inline-block;
+}
+.row1{
+    width: 100%;
+    display: inline-block;
+}
+.imagen{
+    width: 100%;
+    display: inline-block;
+}
+.col1{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;   
+}
+.carro{
+    width: 30%;
+}
+.boton{
+    border: 2px solid black;
+    width: 30%;
+}
+.histo{
+    width: 80%;
+    margin-left: 10%;
+    font-size: x-large;
+}
+.boton1{
+    border:2px solid black;
+    width: 60%;
+    background: black;
+    color: aliceblue;
+}
+
+
+
+
+
+@media (max-width:600px) {
+    .items{
+        flex-direction: column;
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+    #toggle:checked+.icon+.items{
+        display: flex;
+        background: coral;
+    }
+    #tienda .col{
+        width: 100%;
+    }
+    #productos .col{
+        width: 100%;
+    }
+    .tienda{
+        width: 95%;
+    }
+    .descripcion{
+        display: contents;
+    }
+}
+@media screen and (min-width:600px) and (max-width:900px) {
+    nav ul li{
+        display: inline-block;
+        margin: 1em;
+    }
+    #tienda .col{
+        width: 40%;
+    }
+    #productos .col{
+        width: 40%;
+    }
+    .tienda{
+        width: 40%;
+    }
+    .descripcion{
+        display: contents;
+    }
+    h3{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 3em;
+    }
+    h4{
+        font-size: 1em;
+    }
+}
